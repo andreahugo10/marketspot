@@ -1,0 +1,244 @@
+Last login: Thu Apr 23 06:46:20 on ttys000
+andreahugo@Andreas-Mac-mini ~ % ls -la src/styles/
+total 8
+drwxr-xr-x  3 andreahugo  staff   96 Apr 23 06:46 .
+drwxr-xr-x  6 andreahugo  staff  192 Apr 23 06:39 ..
+-rw-r--r--  1 andreahugo  staff  998 Apr 23 06:46 globals.css
+andreahugo@Andreas-Mac-mini ~ % touch src/styles/globals.css
+andreahugo@Andreas-Mac-mini ~ % cat > jsconfig.json << 'EOF'
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  }
+}
+EOF
+andreahugo@Andreas-Mac-mini ~ % 
+andreahugo@Andreas-Mac-mini ~ % npm run dev
+
+> marketspot@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 1149ms
+ ⨯ ./src/pages/_app.jsx:1:1
+Module not found: Can't resolve '@/styles/globals.css'
+> 1 | import '@/styles/globals.css';
+    | ^
+  2 | import { AuthProvider } from '@/hooks/useAuth';
+  3 |
+  4 | function MyApp({ Component, pageProps }) {
+
+https://nextjs.org/docs/messages/module-not-found
+ ⨯ ./src/pages/_app.jsx:1:1
+Module not found: Can't resolve '@/styles/globals.css'
+> 1 | import '@/styles/globals.css';
+    | ^
+  2 | import { AuthProvider } from '@/hooks/useAuth';
+  3 |
+  4 | function MyApp({ Component, pageProps }) {
+
+https://nextjs.org/docs/messages/module-not-found
+ GET / 500 in 491ms
+ ○ Compiling /_error ...
+^C
+andreahugo@Andreas-Mac-mini ~ % cd ~/Desktop/marketspot
+andreahugo@Andreas-Mac-mini marketspot % cat > jsconfig.json << 'EOF'
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  }
+}
+EOF
+andreahugo@Andreas-Mac-mini marketspot % ls jsconfig.json
+jsconfig.json
+andreahugo@Andreas-Mac-mini marketspot % npm run dev
+
+> marketspot@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 1116ms
+ ⨯ ./src/pages/_app.jsx:1:1
+Module not found: Can't resolve '@/styles/globals.css'
+> 1 | import '@/styles/globals.css';
+    | ^
+  2 | import { AuthProvider } from '@/hooks/useAuth';
+  3 |
+  4 | function MyApp({ Component, pageProps }) {
+
+https://nextjs.org/docs/messages/module-not-found
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ○ Compiling / ...
+ GET / 500 in 364ms
+^C
+andreahugo@Andreas-Mac-mini marketspot % import '@/styles/globals.css';
+zsh: command not found: import
+andreahugo@Andreas-Mac-mini marketspot % import '../styles/globals.css';
+zsh: command not found: import
+andreahugo@Andreas-Mac-mini marketspot % 
+andreahugo@Andreas-Mac-mini marketspot % >....                                  
+  @apply px-4 py-2 bg-brand-green text-white rounded-lg hover:bg-opacity-90 transition;
+}
+
+.btn-secondary {
+  @apply px-4 py-2 bg-brand-accent text-white rounded-lg hover:bg-opacity-90 transition;
+}
+
+.btn-outline {
+  @apply px-4 py-2 border-2 border-brand-green text-brand-green rounded-lg hover:bg-brand-green hover:text-white transition;
+}
+
+.input-field {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-green;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4;
+}
+EOF
+zsh: command not found: import
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: #f7f8fa;
+  color: #2c3e50;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn-primary {
+  @apply px-4 py-2 bg-brand-green text-white rounded-lg hover:bg-opacity-90 transition;
+}
+
+.btn-secondary {
+  @apply px-4 py-2 bg-brand-accent text-white rounded-lg hover:bg-opacity-90 transition;
+}
+
+.btn-outline {
+  @apply px-4 py-2 border-2 border-brand-green text-brand-green rounded-lg hover:bg-brand-green hover:text-white transition;
+}
+
+.input-field {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-green;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4;
+}
+andreahugo@Andreas-Mac-mini marketspot % npm run dev
+
+> marketspot@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 1073ms
+ ⨯ ./src/pages/_app.jsx:1:1
+Module not found: Can't resolve '@/styles/globals.css'
+> 1 | import '@/styles/globals.css';
+    | ^
+  2 | import { AuthProvider } from '@/hooks/useAuth';
+  3 |
+  4 | function MyApp({ Component, pageProps }) {
+
+https://nextjs.org/docs/messages/module-not-found
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ○ Compiling / ...
+ GET / 500 in 339ms
+^C
+andreahugo@Andreas-Mac-mini marketspot % import '../styles/globals.css';
+import { AuthProvider } from '@/hooks/useAuth';
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <AuthProvider>
+      <Component {...pageProps} />
+    </AuthProvider>
+  );
+}
+
+export default MyApp;
+zsh: parse error near `}'
+andreahugo@Andreas-Mac-mini marketspot % npm run dev
+
+> marketspot@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 1019ms
+ ⨯ ./src/pages/_app.jsx:1:1
+Module not found: Can't resolve '@/styles/globals.css'
+> 1 | import '@/styles/globals.css';
+    | ^
+  2 | import { AuthProvider } from '@/hooks/useAuth';
+  3 |
+  4 | function MyApp({ Component, pageProps }) {
+
+https://nextjs.org/docs/messages/module-not-found
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ○ Compiling / ...
+ GET / 500 in 587ms
+^C
+andreahugo@Andreas-Mac-mini marketspot % nano src/pages/_app.jsx
+
+  UW PICO 5.09                File: src/pages/_app.jsx                Modified  
+
+import '../styles/globals.css';
+import { AuthProvider } from '@/hooks/useAuth';
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <AuthProvider>
+      <Component {...pageProps} />
+    </AuthProvider>
+  );
+}
+
+export default MyApp;
+
+
+
+
+
+
+
+
+^G Get Help  ^O WriteOut  ^R Read File ^Y Prev Pg   ^K Cut Text  ^C Cur Pos   
+^X Exit      ^J Justify   ^W Where is  ^V Next Pg   ^U UnCut Text^T To Spell  
