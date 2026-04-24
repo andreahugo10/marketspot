@@ -5,10 +5,5 @@
       "src": "package.json",
       "use": "@vercel/next"
     }
-  ],
-  "functions": {
-    "src/pages/**/*.js": {
-      "runtime": "nodejs22.x"
-    }
-  }
+  ]
 }
